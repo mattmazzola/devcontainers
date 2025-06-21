@@ -1,0 +1,10 @@
+{
+    "id": "uv",
+    "version": "1.0.0",
+    "name": "uv",
+    "description": "A .devcontainer template for UV python projects",
+    "licenseURL": "https://github.com/mattmazzola/devcontainers/blob/main/LICENSE",
+    "platforms": [
+        "Any"
+    ]
+}
