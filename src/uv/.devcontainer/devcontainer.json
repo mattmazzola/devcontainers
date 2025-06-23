@@ -42,9 +42,12 @@
             ]
         }
     },
+    "hostRequirements": {
+        "gpu": "optional"
+    },
     "runArgs": [
-        "--gpus",
-        "all",
+        // "--gpus",
+        // "all",
         "--ipc",
         "host",
         "--ulimit",
