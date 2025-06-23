@@ -19,36 +19,9 @@ Templates are individually versioned by the `version` attribute in a Template's 
 
 Templates are source files packaged together that encode configuration for a complete development environment.
 
-This repo contains a GitHub Action [workflow](.github/workflows/release.yaml) that will publish each template to GHCR.  By default, each Template will be prefixed with the `<owner>/<repo>` namespace.  For example, the two Templates in this repository can be referenced by an [implementing tool](https://containers.dev/supporting#tools) with:
-
 ```
-ghcr.io/devcontainers/template-starter/color:latest
-ghcr.io/devcontainers/template-starter/hello:latest
+ghcr.io/mattmazzola/devcontainers/uv:latest
 ```
-
-The provided GitHub Action will also publish a third "metadata" package with just the namespace, eg: `ghcr.io/devcontainers/template-starter`. This contains information useful for tools aiding in Template discovery.
-
-'`devcontainers/template-starter`' is known as the template collection namespace.
-
-### Marking Template Public
-
-For your Template to be used, it currently needs to be available publicly. By default, OCI Artifacts in GHCR are marked as `private`.
-
-To make them public, navigate to the Template's "package settings" page in GHCR, and set the visibility to 'public`.
-
-```
-https://github.com/users/<owner>/packages/container/<repo>%2F<templateName>/settings
-```
-
-### Adding Templates to the Index
-
-Next you will need to add your Templates collection to our [public index](https://containers.dev/templates) so that other community members can find them. Just follow these steps once per collection you create:
-
-* Go to [github.com/devcontainers/devcontainers.github.io](https://github.com/devcontainers/devcontainers.github.io)
-     * This is the GitHub repo backing the [containers.dev](https://containers.dev/) spec site
-* Open a PR to modify the [collection-index.yml](https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml) file
-
-This index is from where [supporting tools](https://containers.dev/supporting) like [VS Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [GitHub Codespaces](https://github.com/templates/codespaces) surface Templates for their Dev Container Creation Configuration UI.
 
 ### Testing Templates
 
