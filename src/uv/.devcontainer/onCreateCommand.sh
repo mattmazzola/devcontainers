@@ -12,4 +12,4 @@ echo "INSTALLING PROJECT DEPENDENCIES"
 # Uncomment after you have setup your UV project
 # uv sync
 
-echo "postCreateCommand.sh finished!"
+echo "onCreateCommand.sh finished!"

@@ -7,4 +7,4 @@ lsb_release -a
 uv --version
 gh --version
 
-echo "postStartCommand.sh finished!"
+echo "postCreateCommand.sh finished!"
