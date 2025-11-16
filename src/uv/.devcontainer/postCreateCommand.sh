@@ -1,10 +1,10 @@
 #! /bin/bash
 
-set -ex
+set -e
 
-echo "Print OS and Tool Versions"
-lsb_release -a
-uv --version
-gh --version
+echo "INSTALLING PROJECT DEPENDENCIES"
+
+# Uncomment after you have setup your UV project
+# uv sync
 
 echo "postCreateCommand.sh finished!"

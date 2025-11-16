@@ -1,5 +1,5 @@
 # Normalize all text files
-*           text=auto
+*           text=auto eol=lf
 
 # Scripts
 *.sh        text eol=lf
